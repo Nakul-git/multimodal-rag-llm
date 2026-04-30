@@ -79,3 +79,9 @@ ollama pull llava
 ollama pull mxbai-embed-large
 ```
 
+## 📄 Dataset / Knowledge Source
+
+This project uses the Transformer research paper:
+
+📘 **Attention Is All You Need**  
+📁 Located in: `docs/attention-is-all-you-need.pdf`
