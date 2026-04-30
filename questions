@@ -1,0 +1,85 @@
+Transformer Interview Questions (Attention Is All You Need)
+
+----------------------------------------
+Architecture (Intermediate)
+----------------------------------------
+1. What are the two sub-layers present in each encoder layer?
+2. What extra sub-layer is added in each decoder layer compared to the encoder?
+3. Why is masking used in the decoder self-attention?
+4. What is the purpose of residual connections in the Transformer?
+5. Why is layer normalization applied after each sub-layer?
+6. What is the role of the Feed-Forward Network (FFN) in each layer?
+
+----------------------------------------
+Attention Mechanism (Deep Understanding)
+----------------------------------------
+7. What are Query, Key, and Value vectors, and how are they used?
+8. What is the difference between self-attention and encoder-decoder attention?
+9. Why is multi-head attention better than single-head attention?
+10. What happens if we increase the number of attention heads too much?
+11. Why are Q, K, V projected into lower dimensions in multi-head attention?
+12. How does attention help capture long-range dependencies?
+
+----------------------------------------
+Mathematical / Formula-Based
+----------------------------------------
+13. What is the formula for Multi-Head Attention?
+14. What is the formula for the Feed Forward Network (FFN)?
+15. How is positional encoding calculated using sine and cosine functions?
+16. What is the learning rate schedule formula used in the Transformer?
+17. Why is the softmax applied after scaling in attention?
+
+----------------------------------------
+Positional Encoding
+----------------------------------------
+18. Why do we need positional encoding in Transformers?
+19. What is the difference between learned and sinusoidal positional encoding?
+20. Why did the authors prefer sinusoidal encoding?
+21. How does positional encoding help generalization to longer sequences?
+
+----------------------------------------
+Comparative Questions (Important)
+----------------------------------------
+22. Why is self-attention more parallelizable than RNNs?
+23. What is the time complexity of self-attention vs RNN vs CNN?
+24. Why does self-attention have a shorter path length for dependencies?
+25. When does self-attention become computationally expensive?
+26. How does restricted self-attention reduce complexity?
+
+----------------------------------------
+Training & Optimization
+----------------------------------------
+27. Which optimizer is used in the Transformer?
+28. What are the values of β₁, β₂, and ε in Adam used here?
+29. What is label smoothing and why is it used?
+30. What is dropout applied to in the Transformer?
+31. What is warmup in learning rate scheduling?
+
+----------------------------------------
+Practical / Implementation Questions
+----------------------------------------
+32. Why are embeddings multiplied by √d_model?
+33. Why do we share weights between embedding and output layers?
+34. What is beam search and why is it used in decoding?
+35. Why is the model autoregressive?
+36. What happens if we remove positional encoding completely?
+
+----------------------------------------
+Advanced / Critical Thinking
+----------------------------------------
+37. What are the limitations of the Transformer?
+38. Why does attention have O(n²) complexity?
+39. How do modern models (like Longformer, Performer) fix this?
+40. Why might too many attention heads hurt performance?
+41. How does attention improve interpretability?
+42. Why is scaling necessary for stable gradients?
+43. What is the trade-off between resolution and attention averaging?
+
+----------------------------------------
+Trick / Interview Questions
+----------------------------------------
+44. Can Transformers work without positional encoding? Why/why not?
+45. Why is self-attention called “content-based addressing”?
+46. Why does dot-product attention fail without scaling for large d_k?
+47. Is attention truly “all you need”? What’s missing?
+48. Why do Transformers struggle with very long sequences?
