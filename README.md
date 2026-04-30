@@ -20,6 +20,7 @@ A **production-style Multimodal RAG (Retrieval-Augmented Generation) system** th
 
 ## 🏗️ Architecture
 
+```text
 User Query
    ↓
 Multi-Query Expansion
@@ -37,6 +38,8 @@ Final Top Chunks
 LLaVA Image Analysis
    ↓
 llama3.2 Final Answer
+```
+---
 
 ## ⚙️ Tech Stack
 
@@ -50,4 +53,29 @@ llama3.2 Final Answer
 | Retrieval    | BM25 + Vector + MMR  |
 | PDF Parsing  | Unstructured         |
 | Framework    | LangChain            |
+
+---
+
+## 📦 Installation
+
+```bash
+git clone https://github.com/your-username/multimodal-rag.git
+cd multimodal-rag
+
+python -m venv venv
+venv\Scripts\activate  # Windows
+# source venv/bin/activate  # Mac/Linux
+
+pip install -r requirements.txt
+```
+
+---
+
+## 🤖 Download Models (Ollama)
+
+```bash
+ollama pull llama3.2
+ollama pull llava
+ollama pull mxbai-embed-large
+```
 
