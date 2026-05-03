@@ -94,7 +94,7 @@ To ensure smooth execution of the Multimodal RAG pipeline (PDF parsing, OCR, and
 
 🪟 Windows Setup
 
-##1️⃣ Install Poppler (for PDF processing)
+1️⃣ Install Poppler (for PDF processing)
 
 Poppler is required for extracting text/images from PDFs.
 
@@ -106,7 +106,7 @@ Example:
 
 C:\poppler-xx\Library\bin
 
-##2️⃣ Install Tesseract OCR (for image text extraction)
+2️⃣ Install Tesseract OCR (for image text extraction)
 
 Tesseract is used for OCR (reading text from images inside PDFs).
 
@@ -122,7 +122,7 @@ C:\Program Files\Tesseract-OCR\tesseract.exe
 import pytesseract
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
-##3️⃣ Install libmagic (file type detection)
+3️⃣ Install libmagic (file type detection)
 
 Required for handling file formats properly.
 
