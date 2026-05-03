@@ -86,13 +86,15 @@ This project uses the Transformer research paper:
 📘 **Attention Is All You Need**  
 📁 Located in: `docs/attention-is-all-you-need.pdf`
 
+---
 
-🧩 System Dependencies (Important for Windows Users)
+## 🧩 System Dependencies (Important for Windows Users)
 
 To ensure smooth execution of the Multimodal RAG pipeline (PDF parsing, OCR, and file handling), you need to install the following system-level dependencies:
 
 🪟 Windows Setup
-1️⃣ Install Poppler (for PDF processing)
+
+##1️⃣ Install Poppler (for PDF processing)
 
 Poppler is required for extracting text/images from PDFs.
 
@@ -103,7 +105,8 @@ Add the bin folder to your system PATH
 Example:
 
 C:\poppler-xx\Library\bin
-2️⃣ Install Tesseract OCR (for image text extraction)
+
+##2️⃣ Install Tesseract OCR (for image text extraction)
 
 Tesseract is used for OCR (reading text from images inside PDFs).
 
@@ -118,7 +121,8 @@ C:\Program Files\Tesseract-OCR\tesseract.exe
 
 import pytesseract
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
-3️⃣ Install libmagic (file type detection)
+
+##3️⃣ Install libmagic (file type detection)
 
 Required for handling file formats properly.
 
@@ -129,6 +133,7 @@ pip install python-magic-bin
 ---
 
 🍎 macOS Setup
+
 brew install poppler
 brew install tesseract
 brew install libmagic
@@ -136,6 +141,7 @@ brew install libmagic
 ---
 
 🐧 Linux Setup (Ubuntu/Debian)
+
 sudo apt update
 sudo apt install -y poppler-utils tesseract-ocr libmagic1
 
