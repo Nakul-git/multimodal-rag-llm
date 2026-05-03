@@ -134,15 +134,15 @@ pip install python-magic-bin
 
 🍎 macOS Setup
 
-brew install poppler
-brew install tesseract
+brew install poppler, 
+brew install tesseract, 
 brew install libmagic
 
 ---
 
 🐧 Linux Setup (Ubuntu/Debian)
 
-sudo apt update
+sudo apt update, 
 sudo apt install -y poppler-utils tesseract-ocr libmagic1
 
 ---
@@ -151,7 +151,7 @@ sudo apt install -y poppler-utils tesseract-ocr libmagic1
 
 Run these commands to confirm everything is working:
 
-tesseract --version
+tesseract --version, 
 pdftoppm -h
 
 
